@@ -79,5 +79,6 @@ class MahasiswaModel
                 "message" => "Data mahasiswa dengan ID {$id} tidak ditemukan"
             ];
         }
+        return  true;
     }
 }
