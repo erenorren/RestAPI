@@ -16,11 +16,22 @@ class Database
         $this->port = getenv('DB_PORT') ?: '3306';
         $this->db_name = getenv('DB_NAME') ?: 'kampus_db';
         $this->username = getenv('DB_USER') ?: 'root';
-        $this->password = getenv('DB_PASS') ?: '';
+        $this->password = getenv('DB_PASS') ?: 'Sh3Belajar!SQL';
         $this->sslmode = getenv('DB_SSLMODE') ?: ''; // vercel pakai require
         // getenv() hanya akan mengambil nilai dari environment variable sistem, bukan dari file .env apa pun.
         // getenv() hanya dipakai untuk production server
     }
+    // public function __construct() {
+    //     $this->type = getenv('DB_TYPE') ?: 'pgsql'; // vercel pakai pgsql
+    //     $this->host = getenv('DB_HOST') ?: 'aws-1-ap-southeast-1.pooler.supabase.com';
+    //     $this->port = getenv('DB_PORT') ?: '5432';
+    //     $this->db_name = getenv('DB_NAME') ?: 'supabase-rest-api';
+    //     $this->username = getenv('DB_USER') ?: 'postgres.euuzmuhheruyrfrmlrvr';
+    //     $this->password = getenv('DB_PASS') ?: '5byI2tJVEzwDnMkJ';
+    //     $this->sslmode = getenv('DB_SSLMODE') ?: 'require'; // vercel pakai require
+    //     // getenv() hanya akan mengambil nilai dari environment variable sistem, bukan dari file .env apa pun.
+    //     // getenv() hanya dipakai untuk production server
+    // }
 
     public function connect()
     {
