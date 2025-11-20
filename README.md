@@ -173,4 +173,3 @@ git add remote repoku https://github.com/<username>/<repo>
 git add .
 git commit -m "persiapan sebelum deploy"
 gut push repoku main --force
-```
